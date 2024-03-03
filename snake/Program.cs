@@ -49,10 +49,9 @@ class Program
 		//hoofd.schermKleur = ConsoleColor.Red;
 
 
-
 		List<int> teljePositie = new List<int>();
 
-
+		
 
 		teljePositie.Add(hoofd.xPos);
 
@@ -134,7 +133,7 @@ class Program
 
 			}
 
-			Console.ForegroundColor =  ConsoleColor.Yellow;
+			Console.ForegroundColor =  ConsoleColor.White;
 
 			Console.WriteLine("Score: " + score);
 
@@ -282,7 +281,7 @@ class Program
 
 					Console.SetCursorPosition(screenwidth / 5, screenheight / 2);
 
-					//???
+					Console.WriteLine("Game Over");
 
 					Console.SetCursorPosition(screenwidth / 5, screenheight / 2 + 1);
 
@@ -318,6 +317,8 @@ public class Pixel
 
 	public string karacter { get; set; }
 
+	public List<(int x, int y)> tail { get; set; }
+
 }
 
 
@@ -328,7 +329,7 @@ public class Obstakel
 
 	public int Xpos { get; set; }
 
-	// ?
+	public int Ypos { get; set; }
 
 	public ConsoleColor schermKleur { get; set; }
 

@@ -1,8 +1,4 @@
-﻿Kod Aplikacji
-
-
-
-using System;
+﻿using System;
 
 using System.Collections.Generic;
 
@@ -30,13 +26,13 @@ class Program
 
 		Random randomnummer = new Random();
 
-		pixel hoofd = new pixel();
+		Pixel hoofd = new Pixel();
 
-		hoofd.xpos = screenwidth / 2;
+		hoofd.xPos = screenwidth / 2;
 
-		hoofd.ypos = screenheight / 2;
+		hoofd.yPos = screenheight / 2;
 
-		hoofd.schermkleur = ConsoleColor.Red;
+		hoofd.schermKleur = ConsoleColor.Red;
 
 		string movement = "RIGHT";
 
